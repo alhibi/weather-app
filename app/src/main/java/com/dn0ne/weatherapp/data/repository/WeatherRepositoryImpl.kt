@@ -15,22 +15,15 @@ class WeatherRepositoryImpl @Inject constructor(
     @Keep
     override suspend fun getWeatherData(latitude: Double, longitude: Double): Resource<WeatherInfo> {
         return try {
-            println("ERROR RESEARCH: in try block")
             Resource.Success(
-                data = api.also {
-                    println("ERROR RESEARCH: get to API")
-                }.getWeatherData(
+                data = api.getWeatherData(
                     latitude = latitude,
                     longitude = longitude
-                ).also {
-                    println("ERROR RESEARCH: after api.getWeatherData()")
-                }.toWeatherInfo().also {
-                    println("ERROR RESEARCH: in toWeatherInfo().also()")
-                }
+                ).toWeatherInfo()
             )
         } catch (e: Exception) {
             e.printStackTrace()
-            Resource.Error(message = e.message ?: "Couldn't update the data. Make sure you are connected to the network.")
+            Resource.Error(message = "Couldn't update the data. Make sure you are connected to the network.")
         }
     }
 }
