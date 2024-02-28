@@ -28,12 +28,7 @@ android {
     buildTypes {
         release {
             isShrinkResources = false
-
-            postprocessing {
-                isRemoveUnusedCode = true
-                isObfuscate = false
-                isOptimizeCode = true
-            }
+            isMinifyEnabled = true
 
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
@@ -93,13 +88,19 @@ dependencies {
     // Location Services
     implementation("com.google.android.gms:play-services-location:21.1.0")
 
-    // Retrofit
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
-    implementation("com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.3")
-
     // KotlinX Datetime
     implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.5.0")
 
+    // KotlinX Serialization
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
+
+    // Ktor
+    implementation("io.ktor:ktor-client-core:2.3.8")
+    implementation("io.ktor:ktor-client-android:2.3.8")
+    implementation("io.ktor:ktor-client-serialization:2.3.8")
+    implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.8")
+    implementation("io.ktor:ktor-client-logging:2.3.8")
+    implementation("io.ktor:ktor-client-content-negotiation:2.3.8")
+
+    implementation("org.slf4j:slf4j-simple:2.0.12")
 }

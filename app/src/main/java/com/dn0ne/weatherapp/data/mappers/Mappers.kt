@@ -1,7 +1,7 @@
 package com.dn0ne.weatherapp.data.mappers
 
-import com.dn0ne.weatherapp.data.WeatherDataDto
-import com.dn0ne.weatherapp.data.WeatherDto
+import com.dn0ne.weatherapp.data.remote.dto.WeatherDataDto
+import com.dn0ne.weatherapp.data.remote.dto.WeatherDto
 import com.dn0ne.weatherapp.domain.extensions.now
 import com.dn0ne.weatherapp.domain.weather.WeatherData
 import com.dn0ne.weatherapp.domain.weather.WeatherInfo
