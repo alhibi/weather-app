@@ -1,6 +1,5 @@
 package com.dn0ne.weatherapp.data.mappers
 
-import androidx.annotation.Keep
 import com.dn0ne.weatherapp.data.WeatherDataDto
 import com.dn0ne.weatherapp.data.WeatherDto
 import com.dn0ne.weatherapp.domain.extensions.now

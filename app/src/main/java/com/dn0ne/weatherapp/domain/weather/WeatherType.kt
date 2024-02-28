@@ -2,8 +2,6 @@ package com.dn0ne.weatherapp.domain.weather
 
 import androidx.annotation.DrawableRes
 import com.dn0ne.weatherapp.R
-import com.dn0ne.weatherapp.domain.extensions.now
-import kotlinx.datetime.LocalDateTime
 
 sealed class WeatherType(
     val weatherDesc: String,

@@ -5,7 +5,6 @@ import android.app.Application
 import android.content.Context
 import android.content.pm.PackageManager
 import android.location.LocationManager
-import android.location.LocationRequest
 import androidx.core.content.ContextCompat
 import androidx.core.location.LocationRequestCompat
 import com.dn0ne.weatherapp.domain.location.Location

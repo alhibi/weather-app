@@ -37,7 +37,6 @@ import androidx.compose.ui.unit.sp
 import com.dn0ne.weatherapp.domain.extensions.getTimeAsString
 import com.dn0ne.weatherapp.domain.extensions.now
 import com.dn0ne.weatherapp.presentation.WeatherState
-import com.dn0ne.weatherapp.presentation.components.weather.WeatherBackground
 import kotlinx.datetime.LocalDateTime
 import kotlin.math.roundToInt
 
@@ -50,11 +49,11 @@ fun WeatherCard(
     graphColor: Color = contentColor
 ) {
     state.weatherInfo?.currentWeatherData?.let { data ->
-        var adaptiveContentColor by remember {
+        val adaptiveContentColor by remember {
             mutableStateOf(contentColor)
         }
 
-        var adaptiveGraphColor by remember {
+        val adaptiveGraphColor by remember {
             mutableStateOf(graphColor)
         }
 

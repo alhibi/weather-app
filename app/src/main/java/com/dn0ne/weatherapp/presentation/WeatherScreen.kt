@@ -16,7 +16,6 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.CloudOff
-import com.dn0ne.weatherapp.presentation.components.refresh.PullRefreshIndicator
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
@@ -31,13 +30,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import com.dn0ne.weatherapp.domain.weather.WeatherType
-import com.dn0ne.weatherapp.presentation.components.weathercard.WeatherCard
 import com.dn0ne.weatherapp.presentation.components.forecast.WeatherForecast
 import com.dn0ne.weatherapp.presentation.components.nextweather.NextDaysWeather
+import com.dn0ne.weatherapp.presentation.components.refresh.PullRefreshIndicator
 import com.dn0ne.weatherapp.presentation.components.refresh.pullRefresh
 import com.dn0ne.weatherapp.presentation.components.refresh.rememberPullRefreshState
 import com.dn0ne.weatherapp.presentation.components.weather.WeatherBackground
+import com.dn0ne.weatherapp.presentation.components.weathercard.WeatherCard
 
 @Composable
 fun WeatherScreen(
