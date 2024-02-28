@@ -41,7 +41,7 @@ fun WeatherBackground(
                     isLightBarsAppearanceEnabled(true)
                     derivedContentColor(Blue)
                     derivedGraphColor(Blue)
-                    SkyBlue
+                    UltraLightBlue
                 }
 
                 in 19..21 -> {
