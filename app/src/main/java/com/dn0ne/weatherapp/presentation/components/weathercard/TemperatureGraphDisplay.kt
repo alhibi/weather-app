@@ -32,7 +32,7 @@ fun TemperatureGraphDisplay(
 ) {
     Column(
         modifier = modifier
-            .clip(RoundedCornerShape(16.dp))
+            .clip(RoundedCornerShape(8.dp))
             .background(Color.White.copy(alpha = .2f))
     ) {
         Text(
